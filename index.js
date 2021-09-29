@@ -5,6 +5,7 @@ var button = document.querySelectorAll('button');
 // var label = document.querySelector('label');
 
 var pull_switch = new Audio("pullchain.wav");
+var neonSound = new Audio("neonSound.flac");
 
 d[0].style.visibility = "hidden";
 
@@ -22,9 +23,12 @@ function onClick(){
   pull_switch.play();
   d[0].style.visibility = "visible";
   div.style.display = "none";
+  neonSound.play();
 }
+
 function offClick(){
   pull_switch.play();
   d[0].style.visibility = "hidden";
   div.style.display = "inherit";
+  neonSound.pause();
 }
