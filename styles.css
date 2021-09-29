@@ -21,17 +21,28 @@ body{
 /* class */
 
 .btn{
-  color:#fff;
+
   padding: 20px 20px;
   /* display: inline-block; */
   text-align: center;
   background-color: transparent;
   position: absolute;
-  top:30.5em;
+  top:29.5em;
   cursor: pointer;
   border:none;
   border-radius: 50%;
+}
 
+.btn0{
+  padding: 20px 20px;
+  /* display: inline-block; */
+  text-align: center;
+  background-color: transparent;
+  position: absolute;
+  top:29.5em;
+  cursor: pointer;
+  border:none;
+  border-radius: 50%;
 }
 .neon-sign{
   display: inline-block;
