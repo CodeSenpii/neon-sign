@@ -17,6 +17,22 @@ body{
   background-color: var(--clr-bg);
   color: var(--clr-neon);
 }
+
+/* class */
+
+.btn{
+  color:#fff;
+  padding: 20px 20px;
+  /* display: inline-block; */
+  text-align: center;
+  background-color: transparent;
+  position: absolute;
+  top:30.5em;
+  cursor: pointer;
+  border:none;
+  border-radius: 50%;
+
+}
 .neon-sign{
   display: inline-block;
   border: var(--clr-neon) 4px solid;
@@ -26,6 +42,7 @@ body{
   box-shadow: inset 0 0 0.5em 0 var(--clr-neon),
     0 0 0.5em 0 var(--clr-neon);
   position: relative;
+  /* animation: glow linear 5s */
 }
 
 .neon-sign::before{
@@ -43,6 +60,10 @@ body{
   opacity: 0.5;
 }
 
+@keyframes glow {
+  0% {opacity: 0.5}
+}
+
 .neon-sign:hover{
   box-shadow: inset 0 0 0.9em 0 var(--clr-neon),
   0 0 0.9em 0 var(--clr-neon);
@@ -51,4 +72,28 @@ body{
 
 .neon-sign:hover::before{
   opacity: 1;
+}
+
+.overlay{
+  position: absolute;
+  top:0;
+  left: 0;
+  font-size: 3rem;
+  font-family: cursive;
+  min-height: 100%;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  color: black;
+  /* opacity: 0.4; */
+  background-color: none;
+}
+.off-sign{
+  position: relative;
+  display: inline-block;
+  border: black 4px solid;
+  padding: 0.525em 1em;
+  border-radius: .25em;
+  opacity: 0.4;
+  top: 27.7%;
 }
