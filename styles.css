@@ -44,6 +44,19 @@ body{
   border:none;
   border-radius: 50%;
 }
+
+.life-sign{
+  color: yellow;
+  position: absolute;
+  display: inline-block;
+  border: yellow 2px solid;
+  border-radius: .25em;
+  padding: 10px 25px;
+  right:72%;
+  top: 11em;
+  font-size: 1em;
+  box-shadow: inset 0 0 0.5em 0 yellow, 0 0 0.5em 0 yellow;
+}
 .neon-sign{
   display: inline-block;
   border: var(--clr-neon) 4px solid;
