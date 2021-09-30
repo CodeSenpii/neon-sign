@@ -8,6 +8,13 @@
 *::after{
   box-sizing: border-box;
 }
+
+/* html{
+  background-color: black;
+  margin: 0;
+  padding: 0;
+} */
+
 body{
   font-size: 3rem;
   font-family: cursive;
@@ -16,6 +23,7 @@ body{
   place-items: center;
   background-color: var(--clr-bg);
   color: var(--clr-neon);
+  margin: 0;
 }
 
 /* class */

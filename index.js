@@ -3,6 +3,7 @@ var d = document.querySelectorAll('h1');
 var div = document.querySelector('div');
 var button = document.querySelectorAll('button');
 var h2 = document.querySelector('h2');
+var body = document.querySelector('body');
 // var label = document.querySelector('label');
 
 var pull_switch = new Audio("pullchain.wav");
@@ -21,8 +22,12 @@ button[0].onclick = offClick;
 // }, 4000);
 function turnOff(){
 
-  h2.style.visibility = "hidden";
+  // h2.style.visibility = "hidden";
+  document.querySelector('html').style.background = "black";
+  body.style.display = 'none';
   pull_switch.play();
+  crikets.pause();
+
 }
 
 function onClick(){
@@ -40,5 +45,5 @@ function offClick(){
   neonSound.pause();
   crikets.play();
 
-  var timer = setTimeout(turnOff, 3000);
+  var timer = setTimeout(turnOff, 5000);
 }
