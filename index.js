@@ -6,6 +6,7 @@ var button = document.querySelectorAll('button');
 
 var pull_switch = new Audio("pullchain.wav");
 var neonSound = new Audio("neonSound.flac");
+var crikets = new Audio("crikets.wav");
 
 d[0].style.visibility = "hidden";
 
@@ -24,6 +25,7 @@ function onClick(){
   d[0].style.visibility = "visible";
   div.style.display = "none";
   neonSound.play();
+  crikets.pause();
 }
 
 function offClick(){
@@ -31,4 +33,5 @@ function offClick(){
   d[0].style.visibility = "hidden";
   div.style.display = "inherit";
   neonSound.pause();
+  crikets.play();
 }
