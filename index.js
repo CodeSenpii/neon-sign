@@ -2,6 +2,7 @@
 var d = document.querySelectorAll('h1');
 var div = document.querySelector('div');
 var button = document.querySelectorAll('button');
+var h2 = document.querySelector('h2');
 // var label = document.querySelector('label');
 
 var pull_switch = new Audio("pullchain.wav");
@@ -18,7 +19,11 @@ button[0].onclick = offClick;
 //   div.style.display = "none";
 //
 // }, 4000);
+function turnOff(){
 
+  h2.style.visibility = "hidden";
+  pull_switch.play();
+}
 
 function onClick(){
   pull_switch.play();
@@ -34,4 +39,6 @@ function offClick(){
   div.style.display = "inherit";
   neonSound.pause();
   crikets.play();
+
+  var timer = setTimeout(turnOff, 3000);
 }
